@@ -1,0 +1,26 @@
+try {
+      this._socket.send(JSON.stringify(data))
+    } catch (e) {
+      let recieveNode = this.shadowRoot.querySelector('#template-recieve')
+      let recieveMsg = document.importNode(recieveNode.content, true)
+      let msg = recieveMsg.querySelector('#msg')
+      let user = recieveMsg.querySelector('#user')
+
+      msg.innerText = data.data
+      user.innerText = `${data.username} offline`
+
+      if (data.username === this._userName) {
+        let msgDiv = recieveMsg.querySelector('#msgdiv')
+        msgDiv.classList.add('send-msg')
+        msgDiv.classList.remove('recieve-msg')
+        this._messageDiv.appendChild(recieveMsg)
+      } else {
+        this._messageDiv.appendChild(recieveMsg)
+      }
+    }
+    this._socket.addEventListener('error', () => {
+      console.log('error')
+    })
+    this._socket.addEventListener('open', () => {
+      console.log('hi')
+    })

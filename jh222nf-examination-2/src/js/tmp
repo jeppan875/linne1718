@@ -1,0 +1,33 @@
+require('./question-box')
+const responses = require('./responses')
+
+/* let data = {
+  answer: 2
+} */
+
+// responses.fetcthAnswer('http://vhost3.lnu.se:20080/answer/1', data).then(data => { console.log(data.nextURL) })
+
+// .then(data => { console.log(data.nextUrl) })
+// http://vhost3.lnu.se:20080/answer/1
+responses.fetcthQuestion('http://vhost3.lnu.se:20080/question/1').then(function (data) {
+  console.log(data)
+  let qBox = document.createElement('question-box')
+  let body = document.querySelector('body')
+  qBox.setAttribute('question', data.question)
+  body.appendChild(qBox)
+  qBox.input.addEventListener('blur', event => {
+    console.log(qBox.input.value)
+  })
+  let answer = {
+    answer: 2
+  }
+
+  qBox.button.addEventListener('click', () => {
+    console.log(answer)
+    responses.fetcthAnswer(data.nextURL, answer).then(data => {
+      responses.fetcthQuestion(data.nextURL).then(data => {
+        console.log(data)
+      })
+    })
+  })
+})

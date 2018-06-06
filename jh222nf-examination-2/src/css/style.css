@@ -1,0 +1,37 @@
+.quiz-box {
+    background-color: #bcb5a9;
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 650px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+}
+.quiz-box label {
+    font-size: 23px;
+    color: #2f3f4d;
+}
+.quiz-box #timer {
+    font-size: 35px;
+    position: relative;
+    padding-left: 550px;
+    color: #07233a;
+}
+.quiz-box p {
+    font-size: 30px;
+    color: #07233a;
+    position: relative;
+}
+.quiz-box input {
+    background-color: #d6cfc5;
+    font-size: 15px;
+}
+.quiz-box button {
+    background-color: #d6cfc5;
+    color: #07233a;
+    height: 25px;
+    width: 150px;
+    font-size: 20px;
+    display: block;
+}

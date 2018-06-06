@@ -1,0 +1,101 @@
+body {
+    background-image: url(../image/ocean.jpeg);
+    background-size: cover;
+}
+header {   
+    position:fixed;
+       top: 0px;
+       left: 0px;
+       height:40px;
+       width:100%;
+       background:rgba(236, 237, 238, 0.815);
+    }
+header img {
+        height:30px;
+        width: 30px;
+        margin: 5px;
+    }
+    header img:hover {
+        height:40px;
+        width: 40px;
+        margin: 0px;
+    }       
+footer {   
+    position:fixed;
+       left:0px;
+       bottom:0px;
+       height:80px;
+       width:100%;
+       background:rgba(139, 141, 143, 0.479);
+    }
+footer img {
+    height:60px;
+    width: 60px;
+    margin: 10px;
+}
+footer img:hover {
+    height:80px;
+    width: 80px;
+    margin: 0px;
+}
+
+.draggable-window {
+    position: absolute;
+    width: 450px;
+    height: 500px;
+}
+.mainbar {
+    margin-top: 0px;
+    height: 30px;
+    background-color: rgb(75, 72, 72);
+}
+.mainbar span {
+    height: 29px;
+    float: right;
+}
+.mainbar a {
+    font-size: 28px;
+    margin-top:0px;
+    padding-top:0px;
+}
+.mainbar a:link {
+    font-size: 28px;
+    color: rgb(241, 46, 46);
+}
+.mainbar a:hover {
+    background: white;
+    color: rgb(156, 14, 14);
+}
+.mainmenu {
+    position: absolute;
+    width:auto;
+    top: 30px;
+    left: 0px;
+    background-color: rgb(117, 114, 114);
+}
+.mainmenu a {
+    display: block;
+}
+.mainmenu a:link {
+    font-size: 18px;
+    color: rgb(241, 46, 46);
+}
+.mainmenu a:hover {
+    background: white;
+    color: rgb(156, 14, 14);
+}
+.faviIcon {
+    top:0;
+    margin: 0px;
+    height: 30px;
+    width: 30px;
+}
+main {
+    height: auto;
+}
+.hidden {
+    visibility: hidden;
+}
+.blurred {
+    opacity: 0.5;
+}

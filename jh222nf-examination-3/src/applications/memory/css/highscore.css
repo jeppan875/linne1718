@@ -1,0 +1,28 @@
+td {
+    font-size: 25px;
+    width: 210px;
+    padding:5px;
+    background-color: rgb(40, 80, 243);
+}
+.leftcolumn {
+    width:10px;
+}
+.rightcolumn {
+    width: 40px;
+}
+
+#highscorehead {
+    font-size: 33px;
+    color: rgb(247, 243, 12);
+}
+#yourscore {
+    font-size: 25px;
+    color: rgb(40, 80, 243);
+    font-style: oblique;
+    padding-top: 10px;
+    margin-top:0px;
+}
+#highscore {
+    padding-top:50px;
+    padding-left:70px;
+}

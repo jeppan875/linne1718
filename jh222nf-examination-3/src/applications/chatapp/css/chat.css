@@ -1,0 +1,81 @@
+:host {
+    width: 100%;
+    height: 100%;
+    background:#afbcd1;
+    margin-left: 0px;
+    display: block;
+}
+
+#messages {
+    margin-top: 0px;
+    white-space: normal;
+    width: 80%;
+    word-break: break-all;
+    overflow-y:auto;
+    overflow-x: hidden;
+    height: 75%;
+    background:#afbcd1;
+    margin: auto;
+}
+.recieve-msg {
+    padding: 3px;
+    background-color: #1f4788;
+    border-radius: 25px;
+    width: auto;
+    max-width: 80%;
+    display: table;
+}
+.send-msg {
+    margin-left:auto; margin-right:0;
+    padding: 3px;
+    background-color: #0fc43c;
+    border-radius: 20px;
+    width: auto;
+    max-width: 80%;
+    display: table;
+}
+#user {
+    font-size: 0.8em;
+    margin: 1px;
+    font-style: italic;
+}
+#textarea {
+    margin-left: 5%;
+    display: inline-block;
+}
+button {
+    background-color: #e2e0c5;
+    font-family: "Times New Roman", Times, serif;
+    color: #1474c2;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 0px;
+    border-radius: 25px;
+}
+form {
+    padding-top: 25%;
+    padding-left: 20%;
+}
+
+form p {
+    font-size: 20px;
+}
+#btn{
+    padding-top: 15%;
+}
+form input {
+    font-size: 20px;
+}
+#send {
+    display:inline;
+}
+#reload {
+    display:inline-block;
+    height: 30px;
+    width: 100px;
+    font-size: 15px;
+    margin-left: 10%;
+}

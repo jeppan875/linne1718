@@ -1,0 +1,28 @@
+form {
+    padding-left: 50px;
+}
+input {
+    background-color: #d6cfc5;
+    font-size: 15px;
+}
+label {
+    font-size: 23px;
+    color: #2f3f4d;
+}
+button {
+    background-color: #d6cfc5;
+    color: #07233a;
+    height: 55px;
+    width: 150px;
+    font-size: 20px;
+    display: block;
+}
+#player {
+    padding-top: 80px;
+}
+#btn {
+    margin-top: 40px;
+}
+#difficulty {
+    margin-top: 40px;
+}  
